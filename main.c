@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 int gcd (int u, int v) {
   int t = 0;
   while (u > 0) {
@@ -8,6 +8,7 @@ int gcd (int u, int v) {
       v = t;
     }
     u = u - v;
+    printf ("u: %d, v: %d\n\r", u, v);
   }
   return v;
 }
